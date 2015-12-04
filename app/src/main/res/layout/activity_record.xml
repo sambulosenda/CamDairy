@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <ImageView
+            android:id="@+id/button_replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart ="true"
+            android:src="@drawable/replay"
+             />
+        
+     
+
+        <ImageView
+            android:id="@+id/button_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/button_replay"
+            android:src="@drawable/delete"
+            />
+
+        <TextView
+            android:id="@+id/min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+			android:textSize="30sp"
+ />
+
+        <TextView
+            android:id="@+id/sec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/min" 
+            android:layout_centerVertical="true" 
+            android:textSize="30sp"
+            />
+
+        <ImageView
+            android:id="@+id/button_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:src="@drawable/finishi"
+            />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative1"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/picture_final"
+            android:layout_width="100dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerInside" />
+        <!-- android:layout_gravity="center_horizontal" -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="6"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:text="Add something..."
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/addwords"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#FFFFCC"
+                android:gravity="left|top"
+                android:hint="Addwords..."
+                android:inputType="textMultiLine"
+                android:maxLines="12"
+                android:minLines="12" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/record_list"
+        android:layout_below="@id/linear1"
+        android:layout_width="fill_parent"
+        android:paddingTop="20dp"
+        android:layout_height="100dp" />
+
+    <ImageView
+        android:id="@+id/button_recordnow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_weight="3"
+        android:src="@drawable/startrecord"
+		 />
+
+</RelativeLayout>

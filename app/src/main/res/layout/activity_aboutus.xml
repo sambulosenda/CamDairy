@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    
+
+       
+        <!-- main layout -->
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <!--  
+             <Button
+                android:id="@+id/menuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Menu" />
+
+            <TextView
+                android:id="@+id/systemsetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="System setting information"
+                android:textSize="20sp" />
+             android:layout_below="@id/menuButton"
+             -->
+            
+           
+
+            <ListView
+                android:id="@+id/contentList"
+                android:layout_width="fill_parent"
+                android:layout_height="450dp"
+                >
+            </ListView>
+
+            <!-- bottom menu -->
+
+            <LinearLayout style="@style/BottomMenu" >
+
+                <Button
+                    android:id="@+id/backtomainpage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Main Page" />
+            </LinearLayout>
+            
+        </RelativeLayout>
+ 
+

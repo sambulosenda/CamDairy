@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.example.test2.SlidingLayout
+        android:id="@+id/slidingLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/menu"
+            style="@style/SlidingMenu" >
+
+            <RelativeLayout
+                android:id="@+id/nickname"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp" >
+
+                <TextView style="@style/Nickname_menu" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/MenuList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@id/nickname" >
+            </ListView>
+        </RelativeLayout>
+        <!-- main layout -->
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            
+            <!-- 
+            
+             <Button
+                android:id="@+id/menuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Menu" />
+
+            <TextView
+                android:id="@+id/systemsetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Gps information"
+                android:textSize="20sp" />
+            
+             -->           
+
+            <EditText
+        		android:id="@+id/editText"
+        		android:layout_width="fill_parent"
+        		android:layout_height="wrap_content"
+        		android:cursorVisible="false"
+        		android:editable="false"
+        		android:ems="10" />
+
+            <!-- bottom menu -->
+
+            <LinearLayout style="@style/BottomMenu" >
+
+                <Button
+                    android:id="@+id/backButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Main Page" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.example.test2.SlidingLayout>
+
+</LinearLayout>

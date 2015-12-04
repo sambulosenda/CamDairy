@@ -1,0 +1,129 @@
+<LinearLayout  
+    xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:background="@drawable/background">  
+
+<RelativeLayout 
+    android:id="@+id/login_div"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_login"
+    android:padding="15dip" >
+  
+        <!-- 账号 -->  
+
+       <ImageView
+           android:id="@+id/head"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:maxHeight="200dp"
+           android:maxWidth="200dp"
+           android:src="@drawable/head" />
+
+        <TextView   
+            android:id="@+id/username_edit"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_alignParentTop="true"  
+            android:layout_marginTop="5dp"  
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@id/head" 
+            android:text="@string/login_label_username"  />
+        
+        <Button   
+            android:id="@+id/edit"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"      
+            android:layout_alignParentRight="true"  
+            android:text="@string/edit"   />
+              
+</RelativeLayout>
+
+
+
+<RelativeLayout 
+    android:id="@+id/basic_information"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_login"
+    android:padding="15dip" >
+        <TextView   
+            android:id="@+id/sex"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_marginTop="3dp"  
+            android:text="@string/sex"  />  
+        <EditText    
+            android:id="@+id/sex_edit"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"   
+            android:layout_toRightOf="@id/sex" 
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/sex"/>
+        
+         <TextView   
+            android:id="@+id/age"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_below="@id/sex" 
+            android:layout_marginTop="3dp"  
+            android:text="@string/age"  />  
+        <TextView    
+            android:id="@+id/age_edit"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"   
+            android:layout_below="@id/sex"
+            android:layout_toRightOf="@id/age" 
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/age"/>
+        
+        <TextView   
+            android:id="@+id/city"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_below="@id/age" 
+            android:layout_marginTop="3dp"  
+            android:text="@string/city"  />  
+        <TextView    
+            android:id="@+id/city_edit"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"   
+            android:layout_below="@id/age"
+            android:layout_toRightOf="@id/city" 
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/city"/> 
+         
+         <TextView   
+            android:id="@+id/email"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            android:layout_below="@id/city" 
+            android:layout_marginTop="3dp"  
+            android:text="@string/email"  />  
+        <TextView    
+            android:id="@+id/email_edit"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"   
+            android:layout_below="@id/city"
+            android:layout_toRightOf="@id/email" 
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/email"/> 
+            
+        <Button   
+            android:id="@+id/log_out"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"  
+            android:layout_below="@id/email"  
+            android:layout_marginTop="3dp"  
+            android:layout_alignParentRight="true"  
+            android:text="@string/log_out"   />
+             
+</RelativeLayout>  
+
+</LinearLayout>  

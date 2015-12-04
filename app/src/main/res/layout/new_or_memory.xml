@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="my.example.test.MainActivity" >
+
+    <RelativeLayout
+        android:background="@drawable/p1"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|top"
+        
+        >
+        <Button
+        android:id="@+id/buttonnewvoyage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start a new voyage"
+        />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:background="@drawable/pugongying"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right|top"
+       
+        >
+        <Button
+        android:id="@+id/buttonmymemory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Look at my Memory"
+        />
+        
+        
+    </RelativeLayout>
+</LinearLayout>

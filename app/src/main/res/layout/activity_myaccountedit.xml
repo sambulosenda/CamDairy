@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+
+        <!-- main layout -->
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/menuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="Menu" />
+
+            <!--  <TextView
+                android:id="@+id/myaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravi1ty="center"
+                android:text="My account information"
+                android:textSize="20sp" />
+
+            <ListView
+                android:id="@+id/contentList"
+                android:layout_width="fill_parent"
+                android:layout_height="450dp"
+                android:layout_below="@id/menuButton" >
+                 
+            </ListView>-->
+            <LinearLayout    
+                android:id="@+id/mycontent"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"  
+                android:layout_height="fill_parent"  
+                android:background="#F3E5F5">  
+
+<RelativeLayout 
+    android:id="@+id/login_div"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#F3E5F5"
+    android:padding="15dip" >
+  
+        <!-- 账号 -->  
+
+       <ImageView
+           android:id="@+id/head"
+           android:layout_width="100dp"
+           android:layout_height="100dp"
+           android:maxHeight="200dp"
+           android:maxWidth="200dp"
+           android:src="@drawable/head" />
+		<RelativeLayout
+		     android:layout_width="wrap_content"  
+            android:layout_height="100dp" 
+            
+		  android:layout_toRightOf="@id/head"   >
+        <TextView   
+            android:id="@+id/username_edit"  
+            android:layout_width="wrap_content"  
+            android:layout_height="wrap_content"  
+            
+            android:paddingTop="30dp"
+            android:textSize="24sp"
+            android:layout_marginTop="5dp"  
+            android:layout_marginLeft="10.0dip"
+            
+            android:text="@string/login_label_username"  />
+        </RelativeLayout>
+        
+        <Button   
+            android:id="@+id/save"  
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"      
+            android:layout_alignParentRight="true"  
+            android:text="@string/save"   />
+              
+</RelativeLayout>
+
+
+
+<RelativeLayout 
+    android:id="@+id/basic_information"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F3E5F5"
+    android:padding="15dip" >
+        <TextView   
+            android:id="@+id/sex"  
+            android:textSize="18sp"
+            android:layout_width="50dp"  
+            android:layout_height="40dp"  
+            android:layout_marginTop="3dp"  
+            android:gravity="center"
+            android:text="@string/sex"  />  
+        <EditText    
+            android:id="@+id/sex_edit"  
+            android:layout_width="160dp"  
+            android:layout_height="40dp"   
+            android:layout_toRightOf="@id/sex" 
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/sex"/>
+        
+         <TextView   
+            android:id="@+id/age"  
+            android:textSize="18sp"
+            android:layout_width="50dp"  
+            android:layout_height="40dp"  
+            android:layout_below="@id/sex" 
+            android:layout_marginTop="3dp"  
+            android:gravity="center"
+            android:text="@string/age"  />  
+        <EditText    
+            android:id="@+id/age_edit"  
+            android:layout_width="160dp"  
+            android:layout_height="40dp"   
+            android:layout_below="@id/sex"
+            android:layout_toRightOf="@id/age" 
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/age"/>
+        
+        <TextView   
+            android:id="@+id/city"  
+            android:textSize="18sp"
+            android:layout_width="50dp"  
+            android:layout_height="40dp"  
+            android:layout_below="@id/age" 
+            android:layout_marginTop="3dp"  
+            android:gravity="center"
+            android:text="@string/city"  />  
+        <EditText    
+            android:id="@+id/city_edit"  
+            android:layout_width="160dp"  
+            android:layout_height="40dp"   
+            android:layout_below="@id/age"
+            android:layout_toRightOf="@id/city" 
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/city"/> 
+         
+         <TextView   
+            android:id="@+id/email"  
+            android:textSize="18sp"
+            android:layout_width="50dp"  
+            android:layout_height="40dp"  
+            android:layout_below="@id/city" 
+            android:layout_marginTop="3dp"  
+            android:gravity="center"
+            android:text="@string/email"  />  
+        <EditText    
+            android:id="@+id/email_edit"  
+            android:layout_width="160dp"  
+            android:layout_height="40dp"   
+            android:layout_below="@id/city"
+            android:layout_toRightOf="@id/email" 
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10.0dip"
+            android:text="@string/email"/>
+        
+             
+</RelativeLayout>  
+
+</LinearLayout>
+
+            <!-- bottom menu -->
+
+            <LinearLayout style="@style/BottomMenu" >
+
+                <Button
+                    android:id="@+id/menuButton_myaccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="Main Page" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/MenuList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+
+</LinearLayout>
